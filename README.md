@@ -7,6 +7,10 @@ Team
 김광원
 
 
+
+
+
+
 # visuaudio
 ### A fun GUI application to visualize audio spectrum
 
@@ -32,6 +36,12 @@ Team
 <li>On MacOS, you will have to grant Terminal permission to use the input sound source.</li>
 <li>Windows, Linux..?
 </ul>
+
+
+
+
+
+
 
 
 # The Algorithms - Python
