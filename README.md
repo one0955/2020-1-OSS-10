@@ -1,15 +1,14 @@
 # 2020-1-OSS Team 10
 Team
-서주원
-주원규
-장병우
-이지영
-김광원
+<ul>서주원</ul>
+<ul>주원규</ul>
+<ul>장병우</ul>
+<ul>이지영</ul>
+<ul>김광원</ul>
 
-
-
-
-
+<br>
+<br>
+<br>
 
 # visuaudio
 ### A fun GUI application to visualize audio spectrum
@@ -37,12 +36,9 @@ Team
 <li>Windows, Linux..?
 </ul>
 
-
-
-
-
-
-
+<br>
+<br>
+<br>
 
 # The Algorithms - Python
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/Python) 
