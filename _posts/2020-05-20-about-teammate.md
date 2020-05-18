@@ -4,12 +4,11 @@ title: 팀 소개
 tags: [Introduction]
 excerpt_separator: <!--more-->
 ---
-{:toc .toc}
 
+{:toc}
 
 # 팀원
 
-* 
     | Name | Git | Role
     |-|-|-
     | 서주원 | bearhunter49 | 팀장
