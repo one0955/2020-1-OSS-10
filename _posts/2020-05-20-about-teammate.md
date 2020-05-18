@@ -6,9 +6,9 @@ color: brown
 excerpt_separator: <!--more-->
 ---
 
-Introduce about our team members.
-
-## 팀원
+**Introduce about our team members.**
+<br>
+## Members
 *
     | Name | Git | Role
     |-|-|-
@@ -19,7 +19,7 @@ Introduce about our team members.
     | 김광원 | one0955 | 팀원
 
 
-## 역할
+## Role
 
 - 서주원: 팀장,
 - 주원규: 팀원,
