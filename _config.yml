@@ -17,7 +17,7 @@ title: Team10 Blog
 name: Team10
 description: 
   2020-1-OSS-10
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl:/blog # the subpath of your site, e.g. /blog
 github_username:  2020-1-OSS-10
 
 # jekyll-paginate configuration
