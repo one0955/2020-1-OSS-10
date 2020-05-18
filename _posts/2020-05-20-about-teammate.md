@@ -2,14 +2,14 @@
 layout: post
 title: Team Members
 tags: [Introduction]
-color: green
+color: brown
 excerpt_separator: <!--more-->
 ---
 
+Introduce about our team members.
 
 ## 팀원
 *
- 
     | Name | Git | Role
     |-|-|-
     | 서주원 | bearhunter49 | 팀장
