@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 - https://github.com/irahorecka/visuaudio
 <br>
 <p align="center">
-<img src="/assets/images/visuaudio.png">
+<img src="/assets/img/visuaudio.png">
 </p>
 <br>
 
