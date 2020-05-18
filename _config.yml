@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: ""
-url: "https://20-1-skku-oss.github.io/"
+baseurl:
+url: "https://20-1-skku-oss.github.io/2020-1-OSS-10"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Type on Strap                                    # site's title
