@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 팀 소개
+title: Team Members
 tags: [Introduction]
 color: green
 excerpt_separator: <!--more-->
