@@ -4,14 +4,11 @@ title: About Project
 tags: [OSS]
 excerpt_separator: <!--more-->
 ---
-Introduce about our open-source-project.
+Introduce about our open-source-project.<br>
 There is 2 projects.
-
+<br>
+<br>
 # Project
-
-<br>
-<br>
-
 ## visuaudio
 - Python
 - MIT
