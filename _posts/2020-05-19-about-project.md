@@ -2,6 +2,7 @@
 layout: post
 title: About Project
 tags: [OSS]
+color: brown
 excerpt_separator: <!--more-->
 ---
 Introduce about our open-source-project.<br>
