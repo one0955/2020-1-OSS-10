@@ -2,7 +2,6 @@
 layout: post
 title: Team Members
 tags: [Introduction]
-color: brown
 excerpt_separator: <!--more-->
 ---
 
