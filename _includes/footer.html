@@ -1,10 +1,12 @@
-<footer class="footer">
-	<ul class="footer-links">
-		<li><a href="http://github.com/alainpham"> <i
-				class="fa fa-inverse fa-github fa-3x"></i></a></li>
-		<li><a href="http://www.linkedin.com/in/alainpham"> <i
-				class="fa fa-inverse fa-linkedin-square fa-3x"></i></a></li>
-		<li><a href="https://twitter.com/koint"> <i
-				class="fa fa-inverse fa-twitter fa-3x"></i></a></li>
-	</ul>
+<footer class="site-footer">
+    <p class="text">
+        {{ site.footer_text | default: "Powered by <a href='https://jekyllrb.com/'>Jekyll</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>" }}</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                {% include icons.html %}
+                </ul>
+            </div>
 </footer>
+
+

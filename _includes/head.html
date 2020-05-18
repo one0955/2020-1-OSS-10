@@ -1,92 +1,66 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@koint">
-  <meta name="twitter:creator" content="@koint">
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  <!-- SEO stuff -->
-  <title>{{page.title}}</title>
-  <meta property="og:title" content="{{page.title}}" />
-  <meta name="twitter:title" content="{{page.title}}">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
 
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-  {% if page.description %}
-	  <meta name="description" content="{{page.description}}" />
-	  <meta property="og:description" content="{{page.description}}" />
-	  <meta name="twitter:description" content="{{page.description}}">
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'feed.xml' | absolute_url }}"/>
+    
+    {% if page.bootstrap %}
+    <!-- Bootstrap-4.1.3 isolation CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/vendor/bootstrap-iso.min.css' | relative_url }}">
 
-  {% else %}
-	  <meta name="description" content="{{page.excerpt | strip_html | strip}}" />
-	  <meta property="og:description" content="{{page.excerpt | strip_html| strip}}" />
-	  <meta name="twitter:description" content="{{page.excerpt | strip_html| strip}}">
-  {% endif %}
-  <link rel="canonical" href="{{site.url}}{{page.url}}" />
-  <meta property="og:url" content="{{site.url}}{{page.url}}" />
-  <meta name="twitter:url" content="{{site.url}}{{page.url}}">
+    <!-- JQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.1.3 compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Popper, a dependency of Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    {% endif %}
 
-  <meta property="og:site_name" content="{{site.name}}" />
-  <meta property="og:image" content="{{site.url}}/assets/images/{{page.id}}/top.jpg" />
-  <meta name="twitter:image" content="{{site.url}}/assets/images/{{page.id}}/top.jpg">
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    {% if site.katex or site.theme_settings.katex %}
+    <script src="{{ '/assets/js/vendor/katex.min.js' | relative_url }}"></script>
+    {% endif %}
 
-  {% if page.id %} <!-- if it's an article -->
-  <meta property="og:type" content="article" />
-  <meta property="article:published_time" content="{{ page.published | date_to_xmlschema }}" />
-  <meta property="article:modified_time" content="{{ page.date | date_to_xmlschema }}" />
+    <!-- Google Analytics -->
+    {% if site.google_analytics %}
+    <!-- Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    
+    <!-- Page analysis (analytics.js) -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+    <!-- End Google Analytics -->
 
-  <meta content="{{site.author}}" property="article:author">
-
-  {% if page.categories %}
-	  {% for category in page.categories limit:1 %}
-	  <meta content="{{ category }}" property="article:section">
-	  {% endfor %}
-  {% endif %}
-
-  {% if page.tags %}
-	  {% for tag in page.tags %}
-	  <meta content="{{ tag }}" property="article:tag">
-	  {% endfor %}
-  {% endif %}
-
-    <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "{{page.title}}",
-"datePublished": "{{ page.published | date_to_xmlschema }}",
-  {% if page.description %}
-"description": "{{page.description}}",
-  {% else %}
-"description": "{{page.excerpt | strip_html}}",
-  {% endif %}
-"url": "{{site.url}}{{page.url}}"}</script>
-
-  {% else %} <!-- its not an article -->
-  	<meta property="og:type" content="website" />
-
-  	    <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "WebSite",
-"headline": "{{page.title}}",
-  {% if page.description %}
-"description": "{{page.description}}",
-  {% else %}
-"description": "{{page.excerpt | strip_html}}",
-  {% endif %}
-"url": "{{site.url}}{{page.url}}"}</script>
-  {% endif %}
-
-  <link rel="author" href="{{site.author}}"/>
-
-   <!-- End SEO stuff -->
-
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-   <link href="/assets/css/syntax.css" rel="stylesheet">
-
-  <script src="/assets/js/jquery.min.js"></script>
-  <script src="/assets/js/bootstrap.min.js"></script>
-
+    <!-- seo tags -->
+    {% seo %}
+    <!-- Manual seo tags -->
+    <!--
+    <title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    -->
 </head>
