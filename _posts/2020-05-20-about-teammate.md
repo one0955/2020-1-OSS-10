@@ -2,13 +2,15 @@
 layout: post
 title: 팀 소개
 tags: [Introduction]
+color: green
 excerpt_separator: <!--more-->
 ---
 
 
 ## 팀원
-
-*   | Name | Git | Role
+*
+ 
+    | Name | Git | Role
     |-|-|-
     | 서주원 | bearhunter49 | 팀장
     | 주원규 | jwk6553 | 팀원
