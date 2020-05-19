@@ -8,16 +8,6 @@ tags: [Introduction]
 excerpt_separator: <!--more-->
 ---
 
----
-layout: post
-title: About Project
-feature-img: "assets/img/pexels/desk-messy.jpeg"
-thumbnail: "assets/img/thumbnails/desk-messy.jpeg"
-image: "assets/img/thumbnails/desk-messy.jpg" #seo tag
-tags: [OSS]
-excerpt_separator: <!--more-->
----
-
 **Introduce about our team members.**
 <br>
 <!--more-->
