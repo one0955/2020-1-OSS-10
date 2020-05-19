@@ -7,6 +7,7 @@ excerpt_separator: <!--more-->
 ---
 Introduce about our open-source-project.<br>
 There is 2 projects.
+<!--more-->
 <br>
 <br>
 # Project
