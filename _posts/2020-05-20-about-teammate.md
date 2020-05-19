@@ -9,13 +9,24 @@ excerpt_separator: <!--more-->
 <br>
 <!--more-->
 ## Members
-*   | Name | Git | Role
-    |-|-|-
-    | 서주원 | bearhunter49 | 팀장
-    | 주원규 | jwk6553 | 팀원
-    | 장병우 | cPy-seeBuy | 팀원
-    | 이지영 | ljy719 | 팀원
-    | 김광원 | one0955 | 팀원
+
+Name  | Git | Role
+------------- | ------------- | -------------
+서주원  | bearhunter49 | 팀장
+주원규 | jwk6553 | 팀원
+장병우 | cPy-seeBuy | 팀원
+이지영 | ljy719 | 팀원
+김광원 | one0955 | 팀원
+
+<br>
+
+| Name | Git | Role
+|-|-|-
+| 서주원 | bearhunter49 | 팀장
+| 주원규 | jwk6553 | 팀원
+| 장병우 | cPy-seeBuy | 팀원
+| 이지영 | ljy719 | 팀원
+| 김광원 | one0955 | 팀원
     
 
 ## Role
