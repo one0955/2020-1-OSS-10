@@ -20,7 +20,7 @@ There is 2 projects.
 - A fun GUI application to visualize audio spectrum
 - https://github.com/irahorecka/visuaudio
 <br>
-<img src="/assets/img/visuaudio.png">
+![Image of a visuaudio]({{ "/assets/img/visuaudio.png" | relative_url }})
 <br>
 
 **How**
