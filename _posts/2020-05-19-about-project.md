@@ -1,10 +1,13 @@
 ---
 layout: post
 title: About Project
+feature-img: "assets/img/pexels/desk-messy.jpeg"
+thumbnail: "assets/img/thumbnails/desk-messy.jpeg"
+image: "assets/img/thumbnails/desk-messy.jpg" #seo tag
 tags: [OSS]
-color: brown
 excerpt_separator: <!--more-->
 ---
+
 Introduce about our open-source-project.<br>
 There is 2 projects.
 <!--more-->
