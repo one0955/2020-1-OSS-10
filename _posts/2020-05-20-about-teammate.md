@@ -1,7 +1,20 @@
 ---
 layout: post
 title: Team Members
+feature-img: "assets/img/pexels/circuit.jpeg"
+thumbnail: "assets/img/pexels/circuit.jpeg"
+image: "assets/img/pexels/circuit.jpeg" #seo tag
 tags: [Introduction]
+excerpt_separator: <!--more-->
+---
+
+---
+layout: post
+title: About Project
+feature-img: "assets/img/pexels/desk-messy.jpeg"
+thumbnail: "assets/img/thumbnails/desk-messy.jpeg"
+image: "assets/img/thumbnails/desk-messy.jpg" #seo tag
+tags: [OSS]
 excerpt_separator: <!--more-->
 ---
 
