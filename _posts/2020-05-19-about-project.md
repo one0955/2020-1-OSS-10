@@ -20,9 +20,7 @@ There is 2 projects.
 - A fun GUI application to visualize audio spectrum
 - https://github.com/irahorecka/visuaudio
 <br>
-<p align="center">
 <img src="/assets/img/visuaudio.png">
-</p>
 <br>
 
 **How**
