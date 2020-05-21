@@ -32,17 +32,6 @@ There is 2 projects.
 <br>
 <br>
 
-## Python
-- Python
-- MIT
-- Implementations for learning purposes
-- https://github.com/TheAlgorithms/Python
-<br>
-
-**All algorithms implemented in Python (for education)**
-<br>
-These implementations are for learning purposes. They may be less efficient than the implementations in the Python standard library.
-<br>
 
 
 
